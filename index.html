@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <h1 class="title">Tic Tac Toe</h1>
+
+    <div class="player-turn"></div>
+
+    <dialog class="modal" data-modal>
+      <div class="icon-container">
+        <img class="close-icon" src="icons/close-icon.svg">
+      </div>
+      <form class="form" method="dialog">
+        <div>
+          <label for="first_player">Player One(X)</label>
+          <input class="first-player" type="text" id="first_player" name="player" required>
+        </div>
+        <div>
+          <label for="second_player">Player Two(O)</label>
+          <input class="second-player" type="text" id="second_player" name="player" required>
+        </div>
+        <button class="submit-btn" type="submit">New Game</button>
+      </form>
+    </dialog>
+
+    <div class="game-container">
+      <div class="grid-container">
+        <div class="items one"></div>
+        <div class="items two"></div>
+        <div class="items three"></div>
+        <div class="items four"></div>
+        <div class="items five"></div>
+        <div class="items six"></div>
+        <div class="items seven"></div>
+        <div class="items eight"></div>
+        <div class="items nine"></div>
+      </div>
+
+      <div>
+        <button data-open-modal class="start-btn">Start Game</button>
+      </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
